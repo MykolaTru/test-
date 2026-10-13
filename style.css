@@ -1,0 +1,236 @@
+
+:root {
+    --brown: #402b23;
+    --coffee: #a5744f;
+    --cream: #f9f5ef;
+    --white: #ffffff;
+    --text: #332a25;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 22px 8%;
+    background: var(--white);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--brown);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--coffee);
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.nav a:hover {
+    color: var(--coffee);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 500px;
+    padding: 90px 20px;
+    color: white;
+    background: linear-gradient(135deg, #302018, #8c5c3c);
+}
+
+.hero-content {
+    max-width: 720px;
+}
+
+.subtitle {
+    color: var(--coffee);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.hero .subtitle {
+    color: #f0c69a;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--coffee);
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #855839;
+}
+
+.section {
+    padding: 85px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: clamp(28px, 4vw, 38px);
+    margin-bottom: 35px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    padding: 35px 25px;
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.coffee-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.menu-card h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    color: #726b65;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--coffee);
+}
+
+.about {
+    background: #eee3d6;
+}
+
+.about > p:last-child {
+    max-width: 650px;
+    margin: auto;
+}
+
+.contacts p {
+    margin-bottom: 12px;
+}
+
+.demo-note {
+    font-size: 13px;
+    color: #716a64;
+}
+
+.contacts .btn {
+    margin-top: 18px;
+}
+
+.footer {
+    text-align: center;
+    background: var(--brown);
+    color: white;
+    padding: 25px;
+}
+
+:focus-visible {
+    outline: 3px solid #c8894f;
+    outline-offset: 4px;
+}
+
+/* Планшети */
+@media (max-width: 900px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Телефони */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 70px 20px;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card {
+        padding: 30px 20px;
+    }
+}

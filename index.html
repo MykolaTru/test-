@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coffee Test — смачна кава, затишна атмосфера та улюблені напої.">
+    <title>Coffee Test — Твоя улюблена кава</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="#home" class="logo">Coffee<span>Test</span></a>
+
+    <nav class="nav" aria-label="Головна навігація">
+        <a href="#home">Головна</a>
+        <a href="#menu">Меню</a>
+        <a href="#about">Про нас</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">ТВОЯ ЩОДЕННА ПОРЦІЯ НАТХНЕННЯ</p>
+            <h1>Кава, яка робить день кращим</h1>
+            <p>
+                Ароматна кава, улюблені напої та затишна атмосфера.
+                Завітай до нас і знайди свій ідеальний смак.
+            </p>
+            <a href="#menu" class="btn">Переглянути меню</a>
+        </div>
+    </section>
+
+    <section class="section" id="menu">
+        <p class="subtitle">ОБИРАЙ УЛЮБЛЕНЕ</p>
+        <h2>Наше меню</h2>
+
+        <div class="menu-grid">
+            <article class="menu-card">
+                <div class="coffee-icon" aria-hidden="true">☕</div>
+                <h3>Еспресо</h3>
+                <p>Насичена кава з яскравим ароматом.</p>
+                <span class="price">35 грн</span>
+            </article>
+
+            <article class="menu-card">
+                <div class="coffee-icon" aria-hidden="true">☕</div>
+                <h3>Капучино</h3>
+                <p>Ніжна молочна пінка та ароматна кава.</p>
+                <span class="price">50 грн</span>
+            </article>
+
+            <article class="menu-card">
+                <div class="coffee-icon" aria-hidden="true">☕</div>
+                <h3>Лате</h3>
+                <p>М'який кавовий смак із молоком.</p>
+                <span class="price">50 грн</span>
+            </article>
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <p class="subtitle">ТРОХИ ПРО НАС</p>
+        <h2>Кава з любов'ю</h2>
+        <p>
+            Ми створили Coffee Test, щоб кожен міг насолоджуватися
+            смачною кавою та приємними моментами щодня.
+        </p>
+    </section>
+
+    <section class="section contacts" id="contacts">
+        <p class="subtitle">ЗАВІТАЙ ДО НАС</p>
+        <h2>Контакти</h2>
+        <p>м. Львів, Україна</p>
+        <p>Щодня: 09:00–21:00</p>
+        <p class="demo-note">Навчальний сайт. Адреса та графік умовні.</p>
+        <button class="btn" id="helloBtn" type="button">
+            Привітатися
+        </button>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> Coffee Test. Навчальний проєкт.</p>
+</footer>
+
+</body>
+</html>
